@@ -1,0 +1,9 @@
+{
+  "customers": [
+    {
+      "name": "John Doe",
+      "isActive": true,
+      "id": 1
+    }
+  ]
+}
