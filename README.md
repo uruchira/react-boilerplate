@@ -1,5 +1,7 @@
 # react-boilerplate
 
+A minimal, feature based React-Redux boilerplate with fetch API along with async await
+
 ## Quick start
 
 1. Clone this repo using `git clone https://github.com/uruchira/react-boilerplate.git`
