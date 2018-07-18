@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux'
-import * as actions from './actions'
+import { fetchCustomers, deleteCustomer } from './actions'
 
 const Customer = ({ id, name, isComplete, deleteCustomer }) => (
   <li>
@@ -14,7 +13,7 @@ const Customer = ({ id, name, isComplete, deleteCustomer }) => (
 
 class CustomerList extends Component {
   componentDidMount() {
-    this.props.actions.fetchCustomers();
+    this.props.fetchCustomers();
   }
 
   render() {
@@ -24,7 +23,7 @@ class CustomerList extends Component {
           {this.props.customers.map(customer =>
             <Customer 
               key={customer.id} 
-              deleteCustomer={ this.props.actions.deleteCustomer} 
+              deleteCustomer={ this.props.deleteCustomer } 
               {...customer} 
             />
           )}
@@ -34,16 +33,7 @@ class CustomerList extends Component {
   }
 }
 
-const mapStateToProps = (state, ownProps) => {
-  return {
-    customers: state.customer.customers 
-  };
-};
-
-const mapDispatchToProps = (dispatch) => {
-  return {
-    actions: bindActionCreators(actions, dispatch)
-  };
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(CustomerList)
+export default connect(
+  (state, ownProps) => ({ customers: state.customer.customers }),
+  { fetchCustomers, deleteCustomer }
+)(CustomerList)
