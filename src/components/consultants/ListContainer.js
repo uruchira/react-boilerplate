@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 import { startLoadConsultants } from '../../processors/consultants/actions';
 import ListItem from './ListItem';
 
@@ -11,7 +12,10 @@ class ListContainer extends Component {
   render() {
     return (
       <div className="container">
-        <h1>Consultants</h1>
+        <div className="section-header">
+          <h3>Consultants</h3>
+          <NavLink to={'/newConsultant'} className="btn btn-primary">New Consultant</NavLink>
+        </div>
         <table className="table table-striped">
           <thead>
             <tr>

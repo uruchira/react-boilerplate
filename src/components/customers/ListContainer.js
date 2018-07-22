@@ -11,7 +11,7 @@ class ListContainer extends Component {
   render() {
     return (
       <div className="container">
-        <h1>Customers</h1>
+        <h3>Customers</h3>
         <table className="table table-striped">
           <thead>
             <tr>
