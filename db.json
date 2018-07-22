@@ -1,0 +1,80 @@
+{
+  "customers": [
+    {
+      "name": "James Doe",
+      "address": "P.O. Box 3700, Eureka, CA 95502",
+      "job": "Police Inspector",
+      "id": 1
+    },
+    {
+      "name": "Daniel Green",
+      "address": "1657 Riverside Drive Redding, CA 96001",
+      "job": "English Teacher",
+      "id": 2
+    },
+    {
+      "name": "Jim Tayler",
+      "address": "100 Main Street, Los Angeles, CA 90012",
+      "job": "Mechanical Engineer",
+      "id": 3
+    },
+    {
+      "name": "James Doe",
+      "address": "P.O. Box 3700, Eureka, CA 95502",
+      "job": "Police Inspector",
+      "id": 4
+    },
+    {
+      "name": "Daniel Green",
+      "address": "1657 Riverside Drive Redding, CA 96001",
+      "job": "English Teacher",
+      "id": 5
+    },
+    {
+      "name": "Jim Tayler",
+      "address": "100 Main Street, Los Angeles, CA 90012",
+      "job": "Mechanical Engineer",
+      "id": 6
+    }
+  ],
+  
+  "consultants": [
+    {
+      "name": "John Doe",
+      "address": "P.O. Box 942873, Sacramento, CA 94273-0001",
+      "job": "Web Developer",
+      "id": 1
+    },
+    {
+      "name": "Mark Green",
+      "address": "50 Higuera Street, San Luis, CA 93401-5415",
+      "job": "Graphic Designer",
+      "id": 2
+    },
+    {
+      "name": "Sam Tayler",
+      "address": "464 W. 4th St. San Bernardino, CA 92402",
+      "job": "Marketing Manager",
+      "id": 3
+    },
+    {
+      "name": "John Doe",
+      "address": "P.O. Box 942873, Sacramento, CA 94273-0001",
+      "job": "Web Developer",
+      "id": 4
+    },
+    {
+      "name": "Mark Green",
+      "address": "50 Higuera Street, San Luis, CA 93401-5415",
+      "job": "Graphic Designer",
+      "id": 5
+    },
+    {
+      "name": "Sam Tayler",
+      "address": "464 W. 4th St. San Bernardino, CA 92402",
+      "job": "Marketing Manager",
+      "id": 6
+    }
+  ]
+}
+
