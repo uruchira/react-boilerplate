@@ -35,6 +35,6 @@ class ListContainer extends Component {
 }
 
 export default connect(
-  (state, ownProps) => ({ customers: state.customer.customers }),
+  (state, ownProps) => ({ customers: state.customers }),
   { fetchCustomers }
 )(ListContainer)

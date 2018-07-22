@@ -3,7 +3,7 @@ import apiClient from "../../api";
 
 const module = "consultants";
 
-export const loadConsultants = (consultants) => ({type: types.CONSULTANTS_LOAD, payload: consultants})
+export const loadConsultants = (consultants) => ({type: types.CONSULTANTS_LOAD, consultants})
 
 export const fetchConsultants = () => {
   return async dispatch => {

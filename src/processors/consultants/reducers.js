@@ -4,12 +4,10 @@ const initState = {
   consultants: [],
 }
 
-export default (state = initState, action) => {
+export default (state = initState.consultants, action) => {
   switch (action.type) {
     case types.CONSULTANTS_LOAD:
-      return { ...state, 
-        consultants: action.payload
-      }
+      return action.consultants
     default:
       return state
   }

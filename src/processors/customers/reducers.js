@@ -4,12 +4,10 @@ const initState = {
   customers: [],
 }
 
-export default (state = initState, action) => {
+export default (state = initState.customers, action) => {
   switch (action.type) {
     case types.CUSTOMERS_LOAD:
-      return { ...state, 
-        customers: action.payload
-      }
+      return action.customers;
     default:
       return state
   }
