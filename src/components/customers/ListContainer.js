@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchCustomers } from '../../processors/customers/actions';
+import { startLoadCustomers } from '../../processors/customers/actions';
 import ListItem from './ListItem';
 
 class ListContainer extends Component {
   componentDidMount() {
-    this.props.fetchCustomers();
+    this.props.startLoadCustomers();
   }
 
   render() {
@@ -36,5 +36,5 @@ class ListContainer extends Component {
 
 export default connect(
   (state, ownProps) => ({ customers: state.customers }),
-  { fetchCustomers }
+  { startLoadCustomers }
 )(ListContainer)

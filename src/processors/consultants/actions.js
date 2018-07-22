@@ -5,7 +5,7 @@ const module = "consultants";
 
 export const loadConsultants = (consultants) => ({type: types.CONSULTANTS_LOAD, consultants})
 
-export const fetchConsultants = () => {
+export const startLoadConsultants = () => {
   return async dispatch => {
     const res = await apiClient.getItems(module);
     if (!res.error)
